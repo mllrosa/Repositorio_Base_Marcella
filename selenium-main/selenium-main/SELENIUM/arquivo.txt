@@ -1,0 +1,14 @@
+Crie uma pasta "Relatorios" usando os.
+Busque o título de https://books.toscrape.com usando requests e bs4.
+Salve o título em um arquivo CSV.
+Leia esse CSV e envie o texto para um campo de formulário usando selenium.
+Digite no campo com pyautogui um "Relatório enviado!" após isso.
+
+
+O que é o Selenium?
+O Selenium é uma ferramenta para automatizar navegadores web. Ele simula interações com páginas, como clicar em botões e preencher formulários.
+
+O que ele faz?
+Automatiza interações com websites
+Realiza testes automatizados
+Faz scraping de páginas dinâmicas

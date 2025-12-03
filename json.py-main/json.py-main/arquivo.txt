@@ -1,0 +1,34 @@
+
+
+O formato JSON é amplamente utilizado para comunicação entre sistemas (como APIs e serviços web).
+JSON precisa ser bem formatado:
+Chaves e valores devem estar entre aspas duplas (" ")
+
+JSON (JavaScript Object Notation) significa Notação de Objeto JavaScript.
+É um formato de troca de dados baseado em texto, leve e fácil de ler
+É amplamente usado para trocar dados entre servidor e cliente, especialmente em aplicações web.
+O JSON é independente de linguagem, mas é muito usado no JavaScript e também em várias outras linguagens, como Python.
+
+Estrutura do JSON
+Objetos são representados por pares chave-valor (semelhante a um dicionário ou mapa).
+Arrays (ou listas) são representados por valores entre colchetes [].
+Exemplo de um objeto JSON (semelhante a um dicionário em Python):
+
+
+
+
+Converter um dicionário para JSON:
+json_str = json.dumps({"nome": "João", "idade": 25})
+
+Converter JSON para dicionário:
+pessoa = json.loads('{"nome": "João", "idade": 25}')
+
+
+Gravar e ler JSON em arquivos:
+Gravar:
+with open("dados.json", "w") as f:
+    json.dump(dados, f)
+
+Ler:
+with open("dados.json", "r") as f:
+    dados = json.load(f)
