@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{% block title %}EcoAfternoon{% endblock %}</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <!-- Logo do EcoAfternoon -->
+      <div class="logo-wrap">
+        <div class="logo-top">ECO AFTERNOON</div>
+        <div class="logo-main">COFFEE</div>
+      </div>
+
+      <!-- Menu -->
+      <nav class="navlinks" aria-label="menu principal">
+        <a class="active" href="{{ url_for('home') }}">Início</a>
+        <a href="#">Menu</a>
+        <a href="#">Sobre</a>
+        <a href="#">Sustentabilidade</a>
+        <a href="#">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="socials">
+        <a class="social" href="#" aria-label="Instagram" title="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.2A4.8 4.8 0 1 0 16.8 13 4.8 4.8 0 0 0 12 8.2zm6.5-2.7a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1z"></path></svg>
+        </a>
+        <a class="social" href="#" aria-label="Facebook" title="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 8h2V5h-2c-1.1 0-2 .9-2 2v1H11v3h4v8h3v-8h2l.5-3H18V7c0-.6.4-1 1-1h1V3h-2c-2.2 0-4 1.8-4 4v1z"></path></svg>
+        </a>
+        <a class="social" href="#" aria-label="Email" title="Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"></path></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      EcoAfternoon Coffee · Sustentabilidade e Inovação
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

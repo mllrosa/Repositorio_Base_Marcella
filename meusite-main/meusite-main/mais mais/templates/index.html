@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jazz Harmony Quartet</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="header-inner">
+            <div id="logoWrapper">
+                <h1 id="logoImage">
+                    <a href="/">Jazz Harmony Quartet</a>
+                </h1>
+            </div>
+            <nav id="mainNavigation">
+                <a href="#home">Início</a>
+                <a href="#members">Membros</a>
+                <a href="#about">Sobre</a>
+                <a href="#contact">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="page">
+        <section id="banner">
+            <div class="banner-content">
+                <h1>Jazz Harmony Quartet</h1>
+                <p>Música de qualidade, emoção pura</p>
+            </div>
+        </section>
+
+        <section id="members" class="content-section">
+            <div class="container">
+                <h2>Conheça Nossos Músicos</h2>
+                <div id="membersGrid" class="members-grid">
+                    <!-- Membros serão carregados via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <div class="container">
+                <h2>Sobre o Grupo</h2>
+                <p>O Jazz Harmony Quartet é um grupo musical dedicado a explorar as ricas tradições do jazz, 
+                   trazendo performances emocionantes e arranjos inovadores. Formado por músicos experientes, 
+                   nosso quarteto combina técnica apurada com paixão pela música.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <p>Para contratar o Jazz Harmony Quartet para seu evento, entre em contato:</p>
+                <p>Email: contato@jazzharmony.com</p>
+                <p>Telefone: (11) 9999-8888</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-inner">
+            <p>&copy; 2024 Jazz Harmony Quartet. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+meu_site/
+├── app.py
+├── static/
+│   ├── images/
+│   │   └── fundo-ecoafternoon.jpg
+│   └── css/
+│       └── style.css
+└── templates/
+    ├── index.html    
+    └── home.html     

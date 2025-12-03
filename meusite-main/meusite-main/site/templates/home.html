@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}EcoAfternoon{% endblock %}
+
+{% block content %}
+<!-- HERO section -->
+<section class="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-overlay" id="heroOverlay" aria-hidden="true"></div>
+</section>
+
+<section class="container">
+  <!-- REMOVI O TÍTULO "Bem-vindo ao EcoAfternoon" -->
+  
+  <div class="grid" id="cardsGrid">
+    <!-- Card 1 -->
+    <article class="card reveal">
+      <div class="photo-wrap">
+        <img class="card-photo" src="https://media-public.canva.com/fDHqM/MAEv5XfDHqM/1/t.png" alt="Café sustentável">
+      </div>
+      <div class="card-body">
+        <h3 class="card-name">Café Sustentável</h3>
+        <div class="card-role">Produção Responsável</div>
+        <p class="card-bio">Grãos selecionados de produtores comprometidos com práticas ambientais e comércio justo.</p>
+      </div>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card reveal">
+      <div class="photo-wrap">
+        <img class="card-photo" src="https://media.canva.com/v2/image-resize/format:PNG/height:133/quality:100/uri:ifs%3A%2F%2FM%2Fd9304ae4-d377-4d14-a211-d3ead96c6fcd/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAAD04Zac2-Fxy_Cu-TfjymYHN1af_7kkIotn96YRgxZyP&exp=1761946438&osig=AAAAAAAAAAAAAAAAAAAAABPnmQYLUuoAaqTseqhpN_yCIrDtGMLHM3nFsERsbyZz&signer=media-rpc&x-canva-quality=thumbnail" alt="Inovação">
+      </div>
+      <div class="card-body">
+        <h3 class="card-name">Inovação</h3>
+        <div class="card-role">Tecnologia Verde</div>
+        <p class="card-bio">Soluções criativas que unem tradição do café às mais modernas práticas sustentáveis.</p>
+      </div>
+    </article>
+  </div>
+</section>
+{% endblock %}

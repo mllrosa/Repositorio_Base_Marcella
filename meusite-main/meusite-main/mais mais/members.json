@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Carlos Silva",
+        "instrument": "Saxofone Tenor",
+        "bio": "Com mais de 15 anos de experiência, Carlos é conhecido por seus solos improvisados que cativam o público.",
+        "image": "https://images.unsplash.com/photo-1560869713-7d9aea7ebcd6?w=300&h=300&fit=crop"
+    },
+    {
+        "id": 2,
+        "name": "Ana Rodrigues",
+        "instrument": "Piano",
+        "bio": "Formada no Conservatório de Música, Ana traz uma abordagem contemporânea ao jazz tradicional.",
+        "image": "https://images.unsplash.com/photo-1511735111819-9a3f7709049c?w=300&h=300&fit=crop"
+    },
+    {
+        "id": 3,
+        "name": "Miguel Santos",
+        "instrument": "Contrabaixo",
+        "bio": "Miguel é o coração rítmico do grupo, com um estilo que mistura jazz clássico e influências brasileiras.",
+        "image": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=300&h=300&fit=crop"
+    },
+    {
+        "id": 4,
+        "name": "Beatriz Costa",
+        "instrument": "Bateria",
+        "bio": "Beatriz traz energia e criatividade aos arranjos, com uma técnica impressionante e timing impecável.",
+        "image": "https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?w=300&h=300&fit=crop"
+    }
+]

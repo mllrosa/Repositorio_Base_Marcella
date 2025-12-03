@@ -1,0 +1,8 @@
+jazz-group-website/
+├── main.py
+├── templates/
+│   └── index.html
+├── static/
+│   ├── styles.css
+│   └── script.js
+└── members.json
