@@ -1,0 +1,9 @@
+
+A estrutura das pastas:
+
+projeto/
+├── templates/
+│   └── index.html
+└── static/
+    └── css/
+        └── style.css

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minigame de Terror</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="monitor">
+        <div class="screen-border">
+            <div class="screen-content">
+                <div class="boot-sequence">
+                    <p>Loading OS...</p>
+                    <p>Initializing Game.exe...</p>
+                    <p class="blink">Pressione qualquer tecla para iniciar...</p>
+                </div>
+                
+                <div class="main-menu" style="display: none;">
+                    <h1>Bem-vindo, Jogador!</h1>
+                    <p>Digite seu nome para continuar.</p>
+                    <form action="/jogo" method="post">
+                        <input type="text" id="nome" name="nome" placeholder="Nome do Jogador" required>
+                        <button type="submit" class="button-start">Continuar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const bootSequence = document.querySelector('.boot-sequence');
+        const mainMenu = document.querySelector('.main-menu');
+
+        document.addEventListener('keydown', () => {
+            bootSequence.style.display = 'none';
+            mainMenu.style.display = 'block';
+        }, { once: true });
+    </script>
+</body>
+</html>
