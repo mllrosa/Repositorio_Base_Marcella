@@ -1,0 +1,7 @@
+Conversor_Dolar_Real/
+│
+├── main.py
+├── requirements.txt
+├── README.md
+└── assets/
+    └── icon.png
