@@ -1,2 +1,0 @@
-# exercicios_while
-exemplos

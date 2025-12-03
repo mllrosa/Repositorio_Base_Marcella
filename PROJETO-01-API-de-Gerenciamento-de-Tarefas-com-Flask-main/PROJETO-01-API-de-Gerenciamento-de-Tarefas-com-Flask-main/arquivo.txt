@@ -1,8 +1,0 @@
-api-tarefas-flask/
-│
-├── templates/
-│   └── teste.html          # Interface web para testar a API
-│
-├── app.py                  # Aplicação Flask principal
-├── requirements.txt        # Dependências do projeto
-└── README.md               # Este arquivo

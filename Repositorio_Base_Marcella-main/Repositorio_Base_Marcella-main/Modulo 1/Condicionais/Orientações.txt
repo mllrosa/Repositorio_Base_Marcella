@@ -1,1 +1,0 @@
-Aqui, vocês vão colocar os códigos sobre IF, else e Elif, código do contatinho por exemplo

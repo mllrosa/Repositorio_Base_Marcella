@@ -1,2 +1,0 @@
-# pygame_jokenpo
-pygame

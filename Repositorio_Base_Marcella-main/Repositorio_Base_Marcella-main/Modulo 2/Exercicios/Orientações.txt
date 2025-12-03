@@ -1,1 +1,0 @@
-Aqui, vocês vão colocar os códigos sobre exercícios "soltos" tipo o código do aluguel de carro, sem streamlit
