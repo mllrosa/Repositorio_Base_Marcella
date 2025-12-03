@@ -1,0 +1,26 @@
+
+Filtrar dados
+Excluir uma linha especifica
+Editar dados de um linha
+Converter csv pra listas ou dicionarios
+Contar quantas vezes um valor apareace
+Ordenar por uma colunas
+Transformar csv em json
+
+
+len retorna a quantidade de itens em uma sequencia
+
+O que é CSV?
+
+CSV significa Comma-Separated Values (Valores Separados por Vírgula). É um formato de arquivo de texto simples usado para armazenar dados tabulares, como uma planilha ou uma tabela de banco de dados, onde cada linha representa um registro e cada valor dentro da linha é separado por uma vírgula (ou outro delimitador, como ponto e vírgula).
+
+Como é estruturado o CSV?
+
+Um arquivo CSV é basicamente uma lista de valores em que cada linha de texto representa uma linha de uma tabela, e os valores de cada coluna são separados por um delimitador (geralmente uma vírgula, mas pode ser outro caractere, como ponto e vírgula ou tabulação).
+
+
+-----------------------
+
+O que é o CSS?
+CSS significa Cascading Style Sheets (Folhas de Estilo em Cascata).
+Ele é usado para estilizar páginas web, ou seja, para definir como os elementos HTML serão exibidos (cores, fontes, margens, alinhamento, etc.).
