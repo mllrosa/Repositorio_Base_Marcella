@@ -1,0 +1,36 @@
+O que é o módulo time?
+O módulo time em Python fornece funções para trabalhar com tempo e temporizadores.
+Ele permite medir intervalos de tempo, pausar o programa e manipular horas, minutos e segundos.
+
+time.sleep(2)  # Pausa o programa por 2 segundos
+
+# Medir o tempo de execução:
+start = time.time()
+# Código que você quer medir o tempo
+time.sleep(3)  # Simula um processo que demora 3 segundos
+end = time.time()
+print(f"O processo levou {end - start} segundos.")
+
+
+
+
+
+
+pyautogui
+pyautogui é uma biblioteca em Python que permite automatizar interações com a interface gráfica do seu computador.
+Com ela, você pode simular ações de mouse e teclado, como clicar, digitar e mover o mouse, útil para testes automatizados, macros, ou automação de tarefas repetitivas.
+
+import pyautogui
+pyautogui.moveTo(100, 200)  # Move o mouse para a posição (100, 200)
+
+pyautogui.click()  # Clica na posição atual do mouse
+pyautogui.click(200, 300)  # Clica na posição (200, 300)
+
+screenshot = pyautogui.screenshot()
+screenshot.save('screenshot.png')  # Salva a captura de tela no arquivo
+
+pos = pyautogui.position()
+print(pos)  # Exibe a posição atual do mouse (x, y)
+
+import pyautogui
+pyautogui.typewrite('Olá, mundo!')  # Digita 'Olá, mundo!'

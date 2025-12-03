@@ -1,0 +1,3 @@
+O módulo os permite que você interaja com o sistema operacional diretamente a partir do seu código Python
+Com ele, você pode fazer coisas como criar e excluir arquivos, navegar entre diretórios, obter informações do sistema e mais
+

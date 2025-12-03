@@ -1,0 +1,9 @@
+200 - OK (ENCONTRADO)
+403 - NÃO AUTORIZADO
+404 - NÃO ENCONTRADO
+500, 502, 503 - ERRO DE COMUNICAÇÃO COM O SERVIDOR E TEMPO EXEDIDO
+
+biblioteca requests
+A biblioteca requests é usada para fazer requisições HTTP em Python
+Com ela, você pode enviar e receber dados de servidores pela internet (ex: fazer um login, buscar informações de uma API).
+É uma biblioteca muito simples e fácil de usar, facilitando a interação com APIs e sites.

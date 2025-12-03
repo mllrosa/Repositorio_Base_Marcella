@@ -1,0 +1,5 @@
+BeautifulSoup ) é uma biblioteca Python usada para analisar e extrair HTML e XML
+
+Ele é muito usado para fazer web scraping, ou seja, para extrair dados de páginas web de forma estruturada
+
+O BeautifulSoup facilita a navegação e a manipulação da estrutura HTML de uma página, tornando o processo mais intuitivo e simples.
