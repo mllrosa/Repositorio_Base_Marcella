@@ -1,0 +1,40 @@
+
+-- CREATE — Criar Bancos de Dados e Tabelas
+
+-- Criar um banco de dados:
+-- CREATE DATABASE nome_do_banco;
+
+-- Criar uma tabela:
+CREATE TABLE nome_da_tabela (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome_coluna1 TIPO,
+    nome_coluna2 TIPO
+);
+
+-- READ — Consultar Dados
+-- Selecionar dados:
+SELECT * FROM nome_da_tabela;
+SELECT coluna1, coluna2 FROM nome_da_tabela;
+
+-- Filtrar dados com WHERE:
+SELECT * FROM nome_da_tabela WHERE coluna = 'valor';
+SELECT * FROM nome_da_tabela WHERE coluna1 = 'valor' AND coluna2 > 100;
+
+-- Ordenar dados com ORDER BY:
+SELECT * FROM nome_da_tabela ORDER BY coluna1 ASC;  -- crescente
+SELECT * FROM nome_da_tabela ORDER BY coluna1 DESC; -- decrescente
+
+-- Limitar resultados com LIMIT:
+SELECT * FROM nome_da_tabela LIMIT 5;  -- Limita a 5 resultados
+
+-- UPDATE — Atualizar Dados
+
+-- Atualizar registros:
+UPDATE nome_da_tabela
+SET coluna1 = 'novo_valor'
+WHERE id = 1;
+
+-- DELETE — Deletar Dados
+
+-- Excluir registros:
+DELETE FROM nome_da_tabela WHERE id = 1;

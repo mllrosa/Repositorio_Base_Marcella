@@ -1,0 +1,73 @@
+-- #CRIAMOS AS TABELAS PRIMEIRO
+
+-- CREATE TABLE Alunos (
+--     id_aluno INTEGER PRIMARY KEY AUTOINCREMENT,
+--     nome TEXT,
+--     idade INTEGER,
+--     nota INTEGER
+-- );
+
+-- CREATE TABLE Cursos (
+--     id_curso INTEGER PRIMARY KEY AUTOINCREMENT,
+--     nome_curso TEXT,
+--     horario INTEGER
+-- );
+
+-- CREATE TABLE Professores (
+--     id_professor INTEGER PRIMARY KEY AUTOINCREMENT,
+--     nome TEXT
+-- );
+
+-- CREATE TABLE Matriculas (
+--     id_matricula INTEGER PRIMARY KEY AUTOINCREMENT,
+--     id_aluno INTEGER,
+--     id_curso INTEGER,
+--     id_professor INTEGER,
+--     forma_pagamen TEXT,
+--     FOREIGN KEY (id_aluno) REFERENCES Alunos(id_aluno),
+--     FOREIGN KEY (id_curso) REFERENCES Cursos(id_curso),
+--     FOREIGN KEY (id_professor) REFERENCES Professores(id_professor)
+-- );
+
+-- #SIMULANDO OS DADOS POR TABELAS
+-- #INSERT POR ALUNOS
+
+-- INSERT INTO Alunos (nome, idade, nota) VALUES ('Ana Souza', 18, 85);
+-- INSERT INTO Alunos (nome, idade, nota) VALUES ('João Silva', 20, 90);
+-- INSERT INTO Alunos (nome, idade, nota) VALUES ('Maria Lima', 19, 75);
+-- INSERT INTO Alunos (nome, idade, nota) VALUES ('Carlos Mendes', 22, 88);
+-- INSERT INTO Alunos (nome, idade, nota) VALUES ('Fernanda Alves', 21, 92);
+
+
+-- #INSERT POR Cursos
+-- INSERT INTO Cursos (nome_curso, horario) VALUES ('Banco de Dados', 8);
+-- INSERT INTO Cursos (nome_curso, horario) VALUES ('Programação Web', 10);
+-- INSERT INTO Cursos (nome_curso, horario) VALUES ('Redes de Computadores', 14);
+-- INSERT INTO Cursos (nome_curso, horario) VALUES ('Engenharia de Software', 16);
+-- INSERT INTO Cursos (nome_curso, horario) VALUES ('Algoritmos', 9);
+
+-- #INSERT POR PROFESSORES
+
+
+-- INSERT INTO Professores (nome) VALUES ('André Souza');
+-- INSERT INTO Professores (nome) VALUES ('Beatriz Oliveira');
+-- INSERT INTO Professores (nome) VALUES ('Carlos Mendes');
+-- INSERT INTO Professores (nome) VALUES ('Daniela Castro');
+-- INSERT INTO Professores (nome) VALUES ('Eduardo Lima');
+
+-- # POR ULTIMO FAZEMOS O INSERT EM MATRICULAS, POIS PRECISAMOS TER OS INSERTS DAS OUTRAS TABELAS ANTES; SE INSERIR PRIMEIRO EM MATRICULAS, IRÁ DAR ERRO.
+
+-- INSERT INTO Matriculas (id_aluno, id_curso, id_professor, forma_pagamen)
+-- VALUES (1, 1, 1, 'Pix');
+--
+-- INSERT INTO Matriculas (id_aluno, id_curso, id_professor, forma_pagamen)
+-- VALUES (2, 2, 2, 'Boleto');
+--
+-- INSERT INTO Matriculas (id_aluno, id_curso, id_professor, forma_pagamen)
+-- VALUES (3, 3, 3, 'Cartão de Crédito');
+--
+-- INSERT INTO Matriculas (id_aluno, id_curso, id_professor, forma_pagamen)
+-- VALUES (4, 4, 4, 'Transferência');
+--
+-- INSERT INTO Matriculas (id_aluno, id_curso, id_professor, forma_pagamen)
+-- VALUES (5, 5, 5, 'Dinheiro');

@@ -1,0 +1,34 @@
+4. Funções de Agregação
+
+Funções de agregação são usadas para realizar cálculos em um conjunto de valores. Os exemplos mais comuns são COUNT, AVG, SUM, MIN, MAX.
+
+Exemplos de funções de agregação:
+-- Contar o número total de livros
+SELECT COUNT(*) AS total_livros
+FROM livros;
+
+-- Somar o ano de publicação dos livros
+SELECT SUM(ano) AS soma_anos
+FROM livros;
+
+-- Encontrar o maior ano de publicação
+SELECT MAX(ano) AS ano_maximo
+FROM livros;
+
+-- Encontrar o menor ano de publicação
+SELECT MIN(ano) AS ano_minimo
+FROM livros;
+
+-- Calcular a média dos anos de publicação dos livros
+SELECT AVG(ano) AS media_ano
+FROM livros;
+
+5. Exemplo Completo com COUNT, AVG e JOIN
+
+Aqui vai um exemplo mais complexo, combinando COUNT, AVG e JOIN:
+
+-- Contar o número de livros por autor e calcular a média do ano de publicação dos livros de cada autor
+SELECT a.nome, COUNT(l.id) AS qtd_livros, AVG(l.ano) AS media_ano
+FROM autores a
+JOIN livros l ON a.id = l.id_autor
+GROUP BY a.id;

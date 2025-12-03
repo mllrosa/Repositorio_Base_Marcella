@@ -1,0 +1,16 @@
+2. AVG
+
+A função AVG calcula a média dos valores de uma coluna numérica.
+
+Exemplo:
+-- Calcular a média do ano de publicação dos livros
+SELECT AVG(ano) AS media_ano
+FROM livros;
+
+-- Calcular a média de anos dos livros emprestados por cada autor
+SELECT id_autor, AVG(ano) AS media_ano
+FROM livros
+GROUP BY id_autor;
+
+
+AVG(coluna): Retorna a média de uma coluna específica.

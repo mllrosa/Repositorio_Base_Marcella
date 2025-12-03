@@ -1,0 +1,34 @@
+
+
+-- 3) MANIPULAÇÃO DE DADOS E TABELAS
+
+-- Alterar Tabelas
+
+-- Alterar nome de uma tabela:
+ALTER TABLE nome_antigo RENAME TO novo_nome;
+
+-- Adicionar uma nova coluna:
+ALTER TABLE nome_da_tabela ADD COLUMN nova_coluna TIPO;
+
+-- Excluir uma coluna (não suportado diretamente no SQLite):
+-- Para SQLite, geralmente é necessário recriar a tabela se você quiser remover uma coluna, ou usar ALTER TABLE em bancos que suportam.
+
+-- Remover Tabelas e Bancos
+
+-- Excluir tabela:
+DROP TABLE nome_da_tabela;
+
+-- Excluir banco de dados (pode ser feito fora do SQL, excluindo o arquivo):
+-- DROP DATABASE nome_do_banco;
+
+-- 4) ÍNDICES
+
+-- Criar índice:
+CREATE INDEX idx_nome_coluna ON nome_da_tabela(coluna);
+
+-- Excluir índice:
+DROP INDEX idx_nome_coluna;
+
+-- Índices são importantes para melhorar a performance de consultas em colunas que são frequentemente consultadas, mas também podem impactar a performance de inserções, pois o índice precisa ser atualizado.
+
+

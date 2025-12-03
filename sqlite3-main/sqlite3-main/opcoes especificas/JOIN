@@ -1,0 +1,37 @@
+3. JOIN
+
+O JOIN serve para combinar dados de duas ou mais tabelas, com base em uma condição de correspondência entre elas.
+
+Tipos de JOIN:
+
+INNER JOIN (mais comum): Retorna apenas os registros que têm correspondência nas duas tabelas.
+
+SELECT a.nome, l.titulo
+FROM autores a
+INNER JOIN livros l ON a.id = l.id_autor;
+
+
+Esse comando irá retornar todos os autores com os livros que eles escreveram.
+
+LEFT JOIN: Retorna todos os registros da tabela à esquerda e as correspondências da tabela à direita, se existirem. Se não houver correspondência, os campos da tabela à direita serão NULL.
+
+SELECT a.nome, l.titulo
+FROM autores a
+LEFT JOIN livros l ON a.id = l.id_autor;
+
+
+Nesse caso, todos os autores serão retornados, mesmo aqueles que não têm livros.
+
+RIGHT JOIN: Retorna todos os registros da tabela à direita e as correspondências da tabela à esquerda. No entanto, o SQLite não suporta RIGHT JOIN, mas em outros bancos de dados isso é possível.
+
+SELECT a.nome, l.titulo
+FROM autores a
+RIGHT JOIN livros l ON a.id = l.id_autor;
+
+
+CROSS JOIN: Retorna o produto cartesiano das duas tabelas (combina cada linha de uma tabela com todas as linhas da outra).
+
+SELECT * 
+FROM autores 
+CROSS JOIN livros;
+

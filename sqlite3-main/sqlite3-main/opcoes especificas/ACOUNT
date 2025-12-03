@@ -1,0 +1,17 @@
+1. COUNT
+
+O COUNT é usado para contar o número de registros em uma tabela ou o número de registros que atendem a uma condição específica.
+
+Exemplo:
+-- Contar o número total de registros na tabela 'emprestimos'
+SELECT COUNT(*) FROM emprestimos;
+
+-- Contar o número de livros emprestados por cada aluno
+SELECT nome_aluno, COUNT(*) AS qtd_emprestimos
+FROM emprestimos
+GROUP BY nome_aluno;
+
+
+COUNT(*): Conta todas as linhas.
+
+COUNT(coluna): Conta todas as linhas que não têm valor NULL na coluna especificada.

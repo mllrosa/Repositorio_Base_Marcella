@@ -1,0 +1,74 @@
+
+-- 2) OPERAÇÕES AVANÇADAS
+
+-- JOINs — Relacionar Tabelas
+
+-- INNER JOIN: Retorna apenas as linhas que têm correspondência nas duas tabelas.
+SELECT a.nome, l.titulo
+FROM autores a
+JOIN livros l ON a.id = l.id_autor;
+
+-- LEFT JOIN: Retorna todas as linhas da tabela à esquerda (tabela "principal") e as linhas correspondentes da tabela à direita (se existirem). Se não houver correspondência, ele preenche com NULL.
+SELECT a.nome, l.titulo
+FROM autores a
+LEFT JOIN livros l ON a.id = l.id_autor;
+
+-- RIGHT JOIN: Retorna todas as linhas da tabela à direita, com NULL para os campos da tabela à esquerda, caso não haja correspondência.
+-- NÃO SUPORTADO NO SQLITE
+-- CROSS JOIN: Retorna o produto cartesiano das duas tabelas (combinando todas as linhas de uma tabela com todas as linhas de outra).
+SELECT * FROM autores CROSS JOIN livros;
+
+-- GROUP BY e Agregações — Agrupar e Contar Dados
+
+-- Agrupar e contar registros:
+SELECT nome_aluno, COUNT(*) FROM emprestimos
+GROUP BY nome_aluno;
+
+-- Funções de agregação:
+-- COUNT: Conta o número de registros.
+-- SUM: Soma os valores de uma coluna.
+-- AVG: Calcula a média dos valores de uma coluna.
+-- MAX: Retorna o maior valor.
+-- MIN: Retorna o menor valor.
+
+SELECT id_autor, COUNT(*) AS qtd_livros
+FROM livros
+GROUP BY id_autor;
+
+SELECT id_autor, SUM(ano) AS soma_anos
+FROM livros
+GROUP BY id_autor;
+
+-- HAVING — Filtrar após o agrupamento
+-- Usado para aplicar condições após o agrupamento (não pode ser usado no lugar de WHERE para filtrar dados antes do agrupamento).
+SELECT nome_aluno, COUNT(*) AS qtd_emprestimos
+FROM emprestimos
+GROUP BY nome_aluno
+HAVING COUNT(*) > 2;
+
+-- Subqueries (Consultas Aninhadas) — Consultas Dentro de Outras Consultas
+
+-- Subconsulta no WHERE:
+SELECT titulo
+FROM livros
+WHERE id_autor IN (
+    SELECT id
+    FROM autores
+    WHERE nacionalidade = 'Brasileiro'
+);
+
+-- Subconsulta no FROM (subquery na tabela):
+SELECT * FROM (
+    SELECT id_autor, COUNT(*) AS qtd_livros
+    FROM livros
+    GROUP BY id_autor
+) AS resumo;
+
+-- INSERT, UPDATE e DELETE com Subqueries
+
+-- Inserir dados com subconsulta:
+INSERT INTO emprestimos (id_livro, nome_aluno, data_emprestimo, data_devolucao)
+SELECT 1, 'João', '2023-10-07', '2023-10-14'
+WHERE NOT EXISTS (
+    SELECT 1 FROM emprestimos WHERE nome_aluno = 'João' AND id_livro = 1
+);

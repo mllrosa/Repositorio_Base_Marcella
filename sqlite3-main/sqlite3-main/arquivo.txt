@@ -1,0 +1,12 @@
+CREATE TABLE: cria uma nova tabela.
+INSERT INTO: insere novos dados.
+SELECT: consulta dados.
+UPDATE: atualiza dados existentes.
+DELETE: remove dados.
+
+SQLite3 é uma biblioteca em Python que permite usar um banco de dados SQL leve e embutido diretamente em seus programas, ou seja, não precisa de um servidor externo. Os dados são armazenados em um arquivo .db e a comunicação com o banco é feita diretamente pelo Python.
+
+SQL significa Structured Query Language (Linguagem de Consulta Estruturada).
+
+É a linguagem padrão usada para gerenciar e consultar bancos de dados relacionais, permitindo manipular dados em tabelas, inserir novos dados, fazer consultas, etc.
+

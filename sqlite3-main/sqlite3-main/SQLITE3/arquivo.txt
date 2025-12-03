@@ -1,0 +1,15 @@
+medicamentos = [
+    ('Tylenol', 202609, 'Farmadistribuidora Ltda', '20 comprimidos', 12.50),
+    ('Neosaldina', 202507, 'Pharma Brasil Distrib.', '30 comprimidos', 18.90),
+    ('Dipirona Genérico', 202604, 'Genfarma SA', '1 frasco de 100 ml', 6.75),
+    ('Amoxicilina', 202511, 'Biotec Pharma', '21 cápsulas', 25.00),
+    ('Ibuprofeno', 202603, 'MedExpress Distribuidora', '10 comprimidos', 9.30),
+]
+
+INSERT
+UPDATE
+DELETE
+commit()
+
+dir
+extensao sqlite3 viewer

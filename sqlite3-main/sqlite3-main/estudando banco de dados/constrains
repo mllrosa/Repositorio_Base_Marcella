@@ -1,0 +1,39 @@
+
+-- 5) CONSTRAINTS (RESTRIÇÕES)
+
+-- PRIMARY KEY
+-- Define a chave primária (única) para a tabela. Cada linha deve ter um valor único nesta coluna.
+CREATE TABLE autores (
+    id INTEGER PRIMARY KEY,
+    nome TEXT NOT NULL
+);
+
+-- FOREIGN KEY
+-- Relaciona uma tabela com outra. Serve para manter a integridade referencial entre tabelas.
+CREATE TABLE livros (
+    id INTEGER PRIMARY KEY,
+    titulo TEXT NOT NULL,
+    id_autor INTEGER,
+    FOREIGN KEY (id_autor) REFERENCES autores(id)
+);
+
+-- NOT NULL
+-- Impede que um campo tenha valor NULL (obrigatório).
+CREATE TABLE livros (
+    id INTEGER PRIMARY KEY,
+    titulo TEXT NOT NULL
+);
+
+-- UNIQUE
+-- Garante que todos os valores em uma coluna sejam únicos (sem repetições).
+CREATE TABLE autores (
+    id INTEGER PRIMARY KEY,
+    email TEXT UNIQUE
+);
+
+-- CHECK
+-- Impõe condições para valores em uma coluna.
+CREATE TABLE livros (
+    id INTEGER PRIMARY KEY,
+    ano INTEGER CHECK(ano >= 1900)
+);

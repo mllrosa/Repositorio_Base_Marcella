@@ -1,0 +1,20 @@
+Contexto:
+    Uma loja virtual vende diversos produtos. Os clientes podem fazer pedidos, e cada pedido pode ter vários produtos. O sistema precisa registrar os dados dos clientes, produtos, pedidos e formas de pagamento.
+Entidades:
+    Cliente  - (id_cliente, nome, numtel, endereco)
+    Produto  - (id_produto, marca, validade, preco)
+    |Pedido| - (id_pedido, retirada, data, status_pedido)
+    Pagamento - (id_pagamento, forpagamento, status_pagamento)
+Relacionamentos:
+    Depois crie um Banco de dados Relacional referente ao diagrama criado.
+    Faça SELECT,UPDATE,INSERT e DELETE para validar o banco criado.
+    Observação: Escolha uma das tabelas para ter a "chave estrangeira".
+
+
+CREATE TABLE matriculas (
+    id INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL,
+    polo TEXT NOT NULL,
+    preco INTEGER NOT NULL,
+    data_matricula DATE NOT NULL,
+    situacao TEXT NOT NULL
+);
